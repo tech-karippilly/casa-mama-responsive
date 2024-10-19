@@ -1,0 +1,15 @@
+:root{
+    --bg-color:#b4a87d;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-style: italic;
+}
