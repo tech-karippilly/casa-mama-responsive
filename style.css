@@ -13,3 +13,11 @@ body{
     font-weight: 400;
     font-style: italic;
 }
+
+.image-section{
+    width: 100%;
+    min-height: 80vh;
+    max-height: auto;
+    display: block;
+}
+
