@@ -1,5 +1,5 @@
 :root{
-    --bg-color:#b4a87d;
+    --bg-color:rgb(228, 225, 219);
 }
 
 *{
@@ -12,6 +12,7 @@ body{
     font-family: "Volkhov", serif;
     font-weight: 400;
     font-style: italic;
+    background-color: var(--bg-color) !important;
 }
 
 .address-section{
@@ -83,9 +84,9 @@ body{
     margin-left: 3px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #fff;
+    background-color:var(--bg-color);
     background-clip: padding-box;
-    border: 1px solid white !important;
+    border: 1px solid var(--bg-color) !important;
     border-radius: 5px !important;
     opacity: .5;
     transition: opacity .6s ease;
@@ -111,7 +112,7 @@ body{
     align-items: center;
     justify-content: center;
     margin: 10px;
-    background-color: white;
+    background-color: var(--bg-colorss) !important;
 }
 
 .icon-continer img{
@@ -136,11 +137,48 @@ body{
     font-size: 14px;
 }
 .book-button:hover{
-    background-color: wheat;
+    background-color: var(--bg-color);
     color: black;
-    border: 2px solid wheat;
+    border: 2px solid var(--bg-color);
 }
 
+.footer-section{
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    z-index: 1;
+    transform: translateY(-100px);
+    transition: transform 0.3s ease;
+    background-color: var(--bg-color);
+}
+.footer-container{
+    position: absolute;
+    top: 15%;
+    display:flex;
+    width: 100%;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+}
+.footer-image-contianer{
+    position: absolute;
+    top: 15%;
+    max-height: 20vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-image-contianer img{
+    object-fit: contain !important;
+}
+.social{
+    color: black;
+}
+.text{
+    color:#b4a87d;
+}
 @media screen and (max-width:576px) {
     .carousel-section{
         display: block;
