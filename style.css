@@ -12,4 +12,53 @@ body{
     font-family: "Volkhov", serif;
     font-weight: 400;
     font-style: italic;
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 100vh;
 }
+
+.navbar-toggler{
+    background-color: blue !important;
+    margin-top: 10%;
+}
+header{
+    
+    min-height: 15vh !important; 
+}
+.logo-container{
+    padding-right: 20rem;
+}
+.navbar{
+    height: 15vh  !important;
+}
+.nav-link{
+    color: var(--bg-color) !important;
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-style: italic;
+    transition: opacity 0.3s ease;
+}
+
+.nav-link:focus ,.nav-link:hover ~ .nav-link
+ {
+  opacity: 1;
+}
+
+.nav-link {
+    opacity: 0.5;
+  }
+
+  @media  screen and (max-width:576px) {
+    .navbar{
+        height: 10vh  !important;
+    }
+    .logo-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .logo-container ~img{
+        background-color: red;
+    }
+  }
