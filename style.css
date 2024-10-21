@@ -14,10 +14,60 @@ body{
     font-style: italic;
 }
 
-.image-section{
-    width: 100%;
-    min-height: 80vh;
-    max-height: auto;
+.carousel-section{
     display: block;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    
+}
+.carousel{
+    position: relative;
+    display: inline-block !important;
+    height: inherit !important;
+    width: 100% !important;
+}
+.carousel-inner{
+    width: inherit !important;
+    height: inherit !important;
+}
+.carousel-item{
+    width: inherit !important;
+    height: inherit !important;
 }
 
+.carousel-image{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit:cover !important;
+}
+.carousel-indicators [data-bs-target] {
+    box-sizing: border-box;
+    flex: 0 1 auto;
+    width: 10px !important; 
+    height: 10px !important;
+   
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid white !important;
+    border-radius: 5px !important;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+
+@media screen and (max-width:576px) {
+    .carousel-section{
+        display: block;
+        width: 100%;
+        height: 80vh;
+        border: 1px solid rebeccapurple;
+        overflow: hidden;
+        
+    }
+}
