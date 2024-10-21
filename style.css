@@ -13,3 +13,35 @@ body{
     font-weight: 400;
     font-style: italic;
 }
+
+.address-section{
+    width: 100%;
+    min-height: 50vh;
+    max-height: auto;
+    display: block;
+}
+.item-center{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column;
+}
+.address-contianers{
+    color: #b4a87d;
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.address-contianers h4{
+    color: #8f8f8f;
+    font-size: 12px;
+}
+.address-contianers p{
+   font-size: 15px;
+}
+
+.address-contianers  a{
+    text-decoration: none !important;
+    color: #8f8f8f !important;
+}
