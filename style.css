@@ -1,0 +1,195 @@
+:root{
+    --bg-color:rgb(228, 225, 219);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-style: italic;
+    background-color: var(--bg-color) !important;
+}
+
+.address-section{
+    width: 100%;
+    min-height: 50vh;
+    max-height: auto;
+    display: block;
+}
+.item-center{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column;
+}
+.address-contianers{
+    color: #b4a87d;
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.address-contianers h4{
+    color: #8f8f8f;
+    font-size: 12px;
+}
+.address-contianers p{
+   font-size: 15px;
+}
+
+.address-contianers  a{
+    text-decoration: none !important;
+    color: #8f8f8f !important;
+}
+.carousel-section{
+    display: block;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    
+}
+.carousel{
+    position: relative;
+    display: inline-block !important;
+    height: inherit !important;
+    width: 100% !important;
+}
+.carousel-inner{
+    width: inherit !important;
+    height: inherit !important;
+}
+.carousel-item{
+    width: inherit !important;
+    height: inherit !important;
+}
+
+.carousel-image{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit:cover !important;
+}
+.carousel-indicators [data-bs-target] {
+    box-sizing: border-box;
+    flex: 0 1 auto;
+    width: 10px !important; 
+    height: 10px !important;
+   
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color:var(--bg-color);
+    background-clip: padding-box;
+    border: 1px solid var(--bg-color) !important;
+    border-radius: 5px !important;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+.book-stay{
+    position: relative;
+    min-width: 100%;
+    min-height: 100vh;
+    max-height: auto;
+    overflow: hidden;
+    background: url('https://images.squarespace-cdn.com/content/v1/5b87817675f9ee9369baaef4/1542245729781-BED7D6HFBN3RM7LAFXBK/DSC03800.jpg?format=2500w');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon-continer{
+    position: relative;
+    width: 100%;
+    height: 10vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    background-color: var(--bg-colorss) !important;
+}
+
+.icon-continer img{
+    height:10rem;
+}
+
+.book-button{
+    width: 20% !important;
+    height: auto;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    display: block;
+    border: 2px solid white;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.book-button:hover{
+    background-color: var(--bg-color);
+    color: black;
+    border: 2px solid var(--bg-color);
+}
+
+.footer-section{
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    z-index: 1;
+    transform: translateY(-100px);
+    transition: transform 0.3s ease;
+    background-color: var(--bg-color);
+}
+.footer-container{
+    position: absolute;
+    top: 15%;
+    display:flex;
+    width: 100%;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+}
+.footer-image-contianer{
+    position: absolute;
+    top: 15%;
+    max-height: 20vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-image-contianer img{
+    object-fit: contain !important;
+}
+.social{
+    color: black;
+}
+.text{
+    color:#b4a87d;
+}
+@media screen and (max-width:576px) {
+    .carousel-section{
+        display: block;
+        width: 100%;
+        height: 80vh;
+        border: 1px solid rebeccapurple;
+        overflow: hidden;
+        
+    }
+    .book-button{
+        width: 50% !important;
+        left: 28%;
+    }
+}
