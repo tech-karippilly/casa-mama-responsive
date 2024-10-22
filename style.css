@@ -1,5 +1,6 @@
 :root{
     --bg-color:rgb(228, 225, 219);
+    --bs-emphasis-color-rgb: rgb(228, 225, 219) !important;
 }
 
 *{
@@ -9,47 +10,43 @@
 }
 
 body{
-    font-family: "Volkhov", serif;
     font-weight: 400;
-    font-style: italic;
     background-color: var(--bg-color) !important;
+    font-display: swap;
 }
-
-.address-section{
-    width: 100%;
-    min-height: 50vh;
-    max-height: auto;
+.navigation-section{
     display: block;
+    width: 100%;
+    min-height: 20vh;
+    max-height: auto;
+    overflow: hidden;
 }
-.item-center{
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    flex-direction: column;
+.navigation-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
-.address-contianers{
-    color: #b4a87d;
+.logo-container {
+    padding-left: 21rem;
+}
+
+.logo-image{
+    width: 55%;
+    
+}
+
+.nav-link{
+    color: #b4a87d !important;
+    text-transform: uppercase;
     font-family: "Volkhov", serif;
-    font-weight: 400;
-    font-size: 13px;
+    font-size: 0.8rem !important;
 }
 
-.address-contianers h4{
-    color: #8f8f8f;
-    font-size: 12px;
-}
-.address-contianers p{
-   font-size: 15px;
-}
-
-.address-contianers  a{
-    text-decoration: none !important;
-    color: #8f8f8f !important;
-}
 .carousel-section{
     display: block;
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     overflow: hidden;
     
 }
@@ -91,7 +88,37 @@ body{
     opacity: .5;
     transition: opacity .6s ease;
 }
+.address-section{
+    width: 100%;
+    min-height: 50vh;
+    max-height: auto;
+    display: block;
+}
+.item-center{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column;
+}
+.address-contianers{
+    color: #b4a87d;
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-size: 13px;
+}
 
+.address-contianers h4{
+    color: #8f8f8f;
+    font-size: 12px;
+}
+.address-contianers p{
+   font-size: 15px;
+}
+
+.address-contianers  a{
+    text-decoration: none !important;
+    color: #8f8f8f !important;
+}
 .book-stay{
     position: relative;
     min-width: 100%;
@@ -179,12 +206,47 @@ body{
 .text{
     color:#b4a87d;
 }
+
+@media  screen and (max-width:992px) {
+    .logo-container {
+        padding-left: 0rem;
+    }
+}
+@media  screen and (max-width:768px) {
+    .logo-container {
+        padding-left: 0rem;
+    }
+    .navigation-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    .navbar-toggler{
+        border: none !important;
+    }
+    .navbar-toggler:focus{
+        box-shadow: none !important;
+    }
+    .navbar-nav{
+        display: flex !important;
+        justify-content: center;
+        align-items: center; 
+    }
+    .nav-item{
+        margin: 10px;
+    }
+    .navbar-toggler-icon{
+        color: #b4a87d !important;
+    }
+    
+}
+
 @media screen and (max-width:576px) {
     .carousel-section{
         display: block;
         width: 100%;
         height: 80vh;
-        border: 1px solid rebeccapurple;
         overflow: hidden;
         
     }
